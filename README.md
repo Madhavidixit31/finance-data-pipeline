@@ -115,6 +115,21 @@ Built 3 key visuals:
 
 ---
 
+---
+
+## Dashboard Previews (Metabase)
+
+### Daily Cash Balance
+![Cash Balance](images/Daily Cash Balance.png)
+
+### Top Vendors by Spend
+![Vendor Spend](images/Top Vendors Spend.png)
+
+### Invoice Status Breakdown
+![Invoice Status](images/Invoice Status Breakdown.png)
+
+---
+
 ## Repo Structure
 
 finance_pipeline/
