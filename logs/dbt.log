@@ -1,0 +1,153 @@
+[0m00:03:53.392029 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110f06cc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113b23140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113b22ed0>]}
+
+
+============================== 00:03:53.394646 | 06891ef0-e91d-4339-8054-93306368da94 ==============================
+[0m00:03:53.394646 [info ] [MainThread]: Running with dbt=1.10.4
+[0m00:03:53.394921 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/madhavidixit/.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'invocation_command': 'dbt init finance_dbt', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m00:03:53.401868 [info ] [MainThread]: Creating dbt configuration folder at /Users/madhavidixit/.dbt
+[0m00:03:53.402449 [debug] [MainThread]: Starter project path: /opt/anaconda3/lib/python3.12/site-packages/dbt/include/starter_project
+[0m00:03:53.404994 [info ] [MainThread]: 
+Your new dbt project "finance_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m00:03:53.405146 [info ] [MainThread]: Setting up your profile.
+[0m00:04:43.167360 [error] [MainThread]: Encountered an error:
+list index out of range
+[0m00:04:43.178156 [error] [MainThread]: Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.12/site-packages/dbt/cli/requires.py", line 161, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/dbt/cli/requires.py", line 111, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/dbt/cli/main.py", line 483, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/dbt/task/init.py", line 346, in run
+    self.setup_profile(profile_name)
+  File "/opt/anaconda3/lib/python3.12/site-packages/dbt/task/init.py", line 261, in setup_profile
+    adapter = self.ask_for_adapter_choice()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/dbt/task/init.py", line 243, in ask_for_adapter_choice
+    return available_adapters[numeric_choice - 1]
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+IndexError: list index out of range
+
+[0m00:04:43.183309 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": false, "command_wall_clock_time": 49.822075, "process_in_blocks": "0", "process_kernel_time": 0.124167, "process_mem_max_rss": "106659840", "process_out_blocks": "0", "process_user_time": 0.604751}
+[0m00:04:43.184524 [debug] [MainThread]: Command `dbt init` failed at 00:04:43.184347 after 49.82 seconds
+[0m00:04:43.185726 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1139497f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113bb79e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1073f5610>]}
+[0m00:04:43.186371 [debug] [MainThread]: Flushing usage events
+[0m00:04:43.423328 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:04:58.258380 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10452a690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1055d6f30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1055d6c90>]}
+
+
+============================== 00:04:58.260778 | 1748ed7e-668b-4e67-8c58-5b8e4e449732 ==============================
+[0m00:04:58.260778 [info ] [MainThread]: Running with dbt=1.10.4
+[0m00:04:58.261057 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': '/Users/madhavidixit/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt init finance_dbt', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m00:04:58.268098 [info ] [MainThread]: A project called finance_dbt already exists here.
+[0m00:04:58.269235 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.041317414, "process_in_blocks": "0", "process_kernel_time": 0.097226, "process_mem_max_rss": "105955328", "process_out_blocks": "0", "process_user_time": 0.56324}
+[0m00:04:58.269485 [debug] [MainThread]: Command `dbt init` succeeded at 00:04:58.269442 after 0.04 seconds
+[0m00:04:58.269640 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104950320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1055d7bf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104acf890>]}
+[0m00:04:58.269793 [debug] [MainThread]: Flushing usage events
+[0m00:04:58.367809 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:06:21.961546 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108339d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108f6b110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108f6ae70>]}
+
+
+============================== 00:06:21.964208 | c3f65c30-b67e-4b5c-a767-adcb794a244c ==============================
+[0m00:06:21.964208 [info ] [MainThread]: Running with dbt=1.10.4
+[0m00:06:21.964493 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/Users/madhavidixit/.dbt', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'invocation_command': 'dbt init finance_dbt', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m00:06:21.972375 [debug] [MainThread]: Starter project path: /opt/anaconda3/lib/python3.12/site-packages/dbt/include/starter_project
+[0m00:06:21.975253 [info ] [MainThread]: 
+Your new dbt project "finance_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m00:06:21.975441 [info ] [MainThread]: Setting up your profile.
+[0m00:08:09.641915 [info ] [MainThread]: Profile finance_dbt written to /Users/madhavidixit/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m00:08:09.648517 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 107.71726, "process_in_blocks": "0", "process_kernel_time": 0.133117, "process_mem_max_rss": "109133824", "process_out_blocks": "0", "process_user_time": 0.601741}
+[0m00:08:09.649683 [debug] [MainThread]: Command `dbt init` succeeded at 00:08:09.649487 after 107.72 seconds
+[0m00:08:09.650865 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108f6aed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1087d1160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1090255b0>]}
+[0m00:08:09.651551 [debug] [MainThread]: Flushing usage events
+[0m00:08:09.873305 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:08:53.448028 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106af15e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1071a70e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1071a6e40>]}
+
+
+============================== 00:08:53.450762 | 0cebac12-a3d1-4d40-884f-d7906ccbdf45 ==============================
+[0m00:08:53.450762 [info ] [MainThread]: Running with dbt=1.10.4
+[0m00:08:53.451057 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': '/Users/madhavidixit/.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m00:08:53.459045 [info ] [MainThread]: dbt version: 1.10.4
+[0m00:08:53.459208 [info ] [MainThread]: python version: 3.12.2
+[0m00:08:53.459333 [info ] [MainThread]: python path: /opt/anaconda3/bin/python
+[0m00:08:53.459452 [info ] [MainThread]: os info: macOS-15.3.2-arm64-arm-64bit
+[0m00:08:53.492817 [info ] [MainThread]: Using profiles dir at /Users/madhavidixit/.dbt
+[0m00:08:53.493073 [info ] [MainThread]: Using profiles.yml file at /Users/madhavidixit/.dbt/profiles.yml
+[0m00:08:53.493206 [info ] [MainThread]: Using dbt_project.yml file at /Users/madhavidixit/Documents/finance_pipeline/dbt_project.yml
+[0m00:08:53.493444 [info ] [MainThread]: adapter type: postgres
+[0m00:08:53.493613 [info ] [MainThread]: adapter version: 1.9.0
+[0m00:08:53.493757 [info ] [MainThread]: Configuration:
+[0m00:08:53.493872 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m00:08:53.493985 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m00:08:53.494095 [info ] [MainThread]: Required dependencies:
+[0m00:08:53.494233 [debug] [MainThread]: Executing "git --help"
+[0m00:08:53.520594 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m00:08:53.521022 [debug] [MainThread]: STDERR: "b''"
+[0m00:08:53.521167 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m00:08:53.521312 [info ] [MainThread]: Connection:
+[0m00:08:53.521450 [info ] [MainThread]:   host: localhost
+[0m00:08:53.521572 [info ] [MainThread]:   port: 5432
+[0m00:08:53.521683 [info ] [MainThread]:   user: postgres
+[0m00:08:53.521790 [info ] [MainThread]:   database: finance_db
+[0m00:08:53.521900 [info ] [MainThread]:   schema: public
+[0m00:08:53.522006 [info ] [MainThread]:   connect_timeout: 10
+[0m00:08:53.522115 [info ] [MainThread]:   role: None
+[0m00:08:53.522221 [info ] [MainThread]:   search_path: None
+[0m00:08:53.522327 [info ] [MainThread]:   keepalives_idle: 0
+[0m00:08:53.522431 [info ] [MainThread]:   sslmode: None
+[0m00:08:53.522536 [info ] [MainThread]:   sslcert: None
+[0m00:08:53.522645 [info ] [MainThread]:   sslkey: None
+[0m00:08:53.522749 [info ] [MainThread]:   sslrootcert: None
+[0m00:08:53.522855 [info ] [MainThread]:   application_name: dbt
+[0m00:08:53.522958 [info ] [MainThread]:   retries: 1
+[0m00:08:53.523199 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m00:08:53.559701 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m00:08:53.613369 [debug] [MainThread]: Using postgres connection "debug"
+[0m00:08:53.613534 [debug] [MainThread]: On debug: select 1 as id
+[0m00:08:53.613647 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m00:08:53.640152 [debug] [MainThread]: SQL status: SELECT 1 in 0.026 seconds
+[0m00:08:53.640590 [debug] [MainThread]: On debug: Close
+[0m00:08:53.640736 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m00:08:53.640881 [info ] [MainThread]: [31m1 check failed:[0m
+[0m00:08:53.640998 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/madhavidixit/Documents/finance_pipeline/dbt_project.yml> not found
+
+[0m00:08:53.642096 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.22535087, "process_in_blocks": "0", "process_kernel_time": 0.14522, "process_mem_max_rss": "120143872", "process_out_blocks": "0", "process_user_time": 0.641146}
+[0m00:08:53.642345 [debug] [MainThread]: Command `dbt debug` failed at 00:08:53.642305 after 0.23 seconds
+[0m00:08:53.642485 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m00:08:53.642636 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1060ff7a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10722c860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1071a7110>]}
+[0m00:08:53.642810 [debug] [MainThread]: Flushing usage events
+[0m00:08:53.750316 [debug] [MainThread]: An error was encountered while trying to flush usage events
