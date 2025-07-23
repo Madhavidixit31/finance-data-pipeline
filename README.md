@@ -82,7 +82,7 @@ Basic data quality tests were added to ensure model integrity.
 All tests are defined in `src_finance.yml`.
 
 To run the tests:
-```bash
+
 dbt test
 
 ---
